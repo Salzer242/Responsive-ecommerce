@@ -13,11 +13,11 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*===== REMOVE MENU MOBILE =====*/
-const navLink = document.querySelectorAll('nav__link')
+const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     // Active link
-    navLink.forEach(n => n.classList.remove('nav-menu'))
+    navLink.forEach(n => n.classList.remove('active'))
     this.classList.add('active')
 
     // Remove menu mobile
