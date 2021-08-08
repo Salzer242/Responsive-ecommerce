@@ -16,6 +16,7 @@
   --dark-color: #101010;
   --dark-color-light: #606060;
   --gray-color: #F0F1F3;
+  --red-color : #D2321E;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -141,13 +142,13 @@ img {
 @media screen and (max-width: 768px){
     .nav__menu{
         position: fixed;
-        top: var(--header-height);
-        right: 0;
-        width: 50%;
+        top: 3.3rem;
+        right: -100%;
+        width: 80%;
         height: 100%;
         padding: 2rem;
         background-color: var(--white-color);
-        transition: -5;
+        transition: .5s;
     }
 }
 
@@ -178,7 +179,13 @@ img {
     cursor: pointer;
 }
 /*=== Show menu ===*/
+.show{
+    right: 0;
+}
 
+.active{
+    color: var(--first-color);
+}
 
 /*===== HOME =====*/
 
